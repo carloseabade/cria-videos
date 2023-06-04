@@ -117,7 +117,7 @@ def delete_medias():
 
 
 def initial():
-    create_video()
+    create_video("Teste", "videos/video1.mp4")
     add_audio_to_video()
     # delete_medias()
 
