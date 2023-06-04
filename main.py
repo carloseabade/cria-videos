@@ -92,7 +92,7 @@ def add_audio_to_video():
 
 
 def delete_medias():
-        # Obtém a lista de arquivos na pasta
+    # Obtém a lista de arquivos na pasta
     arquivos = os.listdir('images')
     
     for arquivo in arquivos:
