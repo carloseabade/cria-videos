@@ -27,7 +27,7 @@ def add_text_to_image(image_path, text, number=None, video_size=None):
         draw = ImageDraw.Draw(image)
 
     draw.text((100, 100), f"#{number+1}", font=ImageFont.truetype("./font/Roboto_Mono/static/RobotoMono-Bold.ttf", 100), fill=(0, 0, 0), fontcolor=(255, 255, 255))
-    return image, image.size
+    return image
 
 def add_text_to_video(video_clip, text, duration):
     font_path = "./font/Roboto_Mono/static/RobotoMono-Bold.ttf"
