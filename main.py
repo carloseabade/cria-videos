@@ -11,7 +11,7 @@ songs_folder = "songs"
 videos_folder = "videos"
 image_duration = 0.8  # Duração de cada imagem no vídeo (em segundos)
 transition_duration = 0.2  # Duração da transição entre as imagens (em segundos)
-output_file = "video_carrossel.mp4"  # Nome do arquivo de saída do vídeo
+output_file = "output_video.mp4"  # Nome do arquivo de saída do vídeo
 text = "Se vc conhece sua namorad@ qual ela vai gostar??"
 
 def add_text_to_image(image_path, text, number=None, video_size=None):
