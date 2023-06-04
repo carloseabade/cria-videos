@@ -44,14 +44,11 @@ def create_video(text, input_video):
     images = os.listdir(image_folder)
     clips = []
 
-    video_path = "video/video1.mp4"  # Substitua pelo caminho para o vídeo desejado
-    video_clip = VideoFileClip(video_path)
+    video_clip = VideoFileClip(input_video)
     video_size = video_clip.size
     start_time = 0  # Tempo de início em segundos
     end_time = 5  # Tempo de término em segundos
     trimmed_clip = video_clip.subclip(start_time, end_time)
-    text = "Se vc conhece sua namorad@ qual ela vai gostar??"
-
 
     video_with_text = add_text_to_video(trimmed_clip, text, end_time - start_time)
     clips.append(video_with_text)
