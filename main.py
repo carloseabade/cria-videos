@@ -7,6 +7,8 @@ from moviepy.editor import concatenate
 
 
 image_folder = "images"
+songs_folder = "songs"
+videos_folder = "videos"
 image_duration = 0.8  # Duração de cada imagem no vídeo (em segundos)
 transition_duration = 0.2  # Duração da transição entre as imagens (em segundos)
 output_file = "video_carrossel.mp4"  # Nome do arquivo de saída do vídeo
