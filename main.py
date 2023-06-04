@@ -56,8 +56,8 @@ def create_video(text, input_video):
     for i, image_name in enumerate(images):
         image_path = os.path.join(image_folder, image_name)
         text = f"#{i}"
-        image_with_text, image_size = add_text_to_image(image_path, text, number=i, video_size=video_size)
-        image_array = np.array(image_with_text) 
+        image_with_text = add_text_to_image(image_path, text, number=i, video_size=video_size)
+        image_array = np.array(image_with_text)
         image_clip = ImageClip(image_array).set_duration(image_duration)
         if i < len(images) - 1:
             transition_clip = ImageClip(image_array).set_duration(transition_duration)
