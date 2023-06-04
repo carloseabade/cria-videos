@@ -40,7 +40,7 @@ def add_text_to_video(video_clip, text, duration):
     return video_with_text
 
 
-def create_video():
+def create_video(text, input_video):
     images = os.listdir(image_folder)
     clips = []
 
